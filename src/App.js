@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {BookList} from './components'
+import {BookList, AddBook} from './components'
 import ApolloClient from 'apollo-boost'
-import {URI} from '../lib/constants'
+import {URI} from './lib/constants'
 import {ApolloProvider} from 'react-apollo'
 
 //Apollo Client setup
@@ -16,6 +16,7 @@ class App extends Component {
         <div id="main">
           <h1>Reading List:</h1>
           <BookList/>
+          <AddBook/>
         </div>
       </ApolloProvider>
     );
